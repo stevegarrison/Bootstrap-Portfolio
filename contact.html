@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Steve Garrison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Begin NavBar-->
+    <div class="container-fullwidth bg-dark">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-light bg-dark text-center">Steve Garrison</h3>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav justify-content-end bg-dark">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-light" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--End NavBar-->
+    <!--Section: Contact v.2-->
+    <div class="container">
+        <div class="row">
+            <div class="row-md-2"></div>
+                <div class="row-md-8">
+                    <!--Section heading-->
+                    <div class="row">
+                        <h2 class="h1-responsive font-weight-bold text-center my-4 text-dark">Contact Steve</h2>
+                        <!--Grid column-->
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                            <label for="message">Your message</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+                            </form>
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-success"
+                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <body>
+
+    </body>
+
+</html>
