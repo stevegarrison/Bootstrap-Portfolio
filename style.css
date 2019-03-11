@@ -1,4 +1,6 @@
+*{
 
+}
 .card {
     margin: 0 auto;
     float: none;
@@ -12,6 +14,9 @@
 
 h3{
     padding-top: 5px;
+    font-size: 32px;
+    font-weight: 650;
+
 }
 
 #contact-steve{
@@ -21,6 +26,8 @@ h3{
 
 #about-steve{
     padding-left: 15px;
+    font-size: 32px;
+    font-weight: 450;
 }
 
 #contact-container{
@@ -37,7 +44,7 @@ h3{
 }
 
 #steve-bio{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #footer{
@@ -45,18 +52,15 @@ h3{
     bottom: 0;
     width: 100%;
     padding-bottom: 1%;
-    margin-top: 200px;
 }
 
-@media screen and (max-width: 980px) {
-    
+.nav-item{
+    font-weight: 550;
+    font-size: 18px;
 }
-@media screen and (max-width: 768px) {
-    
+
+.md-form label{
+    position: relative;
+    top: 0%;
 }
-@media screen and (max-width: 640px) {
-    .nav{
-        position: static;
-    }
-    
-}
+
