@@ -10,99 +10,93 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!--Begin NavBar-->
-    <div class="container-fullwidth bg-dark shadow">
-        <div class="row">
-            <div class="col-md-4">
-                <h3 class="text-light bg-dark ml-4">
-                    Steve Garrison
-                    <a class="li-ic" href="https://linkedin.com/in/steve-garrison" target="_blank">
-                        <i id="linkedin-btn"
-                            class="fab fa-linkedin-in fa-sm white-text mr-md-2 ml-3 fa-lg pl-1 pr-1 pt-2 pb-1 mt-2 rounded">
-                        </i>
-                    </a>
-                </h3>
-            </div>
-            <div class="col-md-8 pt-2">
-                <ul class="nav justify-content-end bg-dark">
-                    <li class="nav-item ">
-                        <a class="nav-link active text-light" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--End NavBar-->
-    <!--Begin About Me Display-->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="row-md-2"></div>
-            <div class="card">
-                <div class="row-md-8 bg-light">
-                    <div class="container shadow">
-                        <div class="card-body bg-light">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img class="shadow" src="IMG_3001.jpg" width="100%" height="95%px">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4 class="text-center" id="about-steve">About Steve</h4>
-                                    <div class="text-center border p-3 mb-2">
-                                        <a href="Steven.Garrison Resume.pdf" target="_blank">Steve Garrison Resume</a>
-                                    </div>
-                                    <p class="card-text text-dark" id="steve-bio">Steve Garrison is a Colorado native,
-                                        and a current student at
-                                        the Universiry of Denver's Full-Stack Web Development coding bootcamp. Steve
-                                        also recently graduated from Colorado State University with a degree in Finance,
-                                        and will be moving to Salt Lake City, Utah this summer to begin his career as a
-                                        financial analyst.
-                                    </p>
-                                    <p class="card-text text-dark" id="steve-bio">
-                                        Outside of class Steve enjoys skiing, cooking and eating, spending time with
-                                        friends and family, and learning new things.</p>
-                                </div>
-
-                                <div class="container">
-                                    <div class="row">
-                                        <p class="card-text"></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-md-2">
-                    </div>
+    <div>
+        <div class="container-fullwidth bg-dark shadow" id="navbar">
+            <div class="row">
+                <div class="col-md-4 pr-0" id="768-header">
+                    <h3 class="text-light bg-dark ml-4 mb-0">
+                        Steve Garrison
+                        <a class="li-ic" href="https://linkedin.com/in/steve-garrison" target="_blank">
+                            <i id="linkedin-btn"
+                                class="fab fa-linkedin-in fa-sm white-text mr-md-2 ml-3 fa-lg pl-1 pr-1 pt-2 pb-1 mt-2 rounded">
+                            </i>
+                        </a>
+                    </h3>
+                </div>
+                <div class="col-md-8 pr-0 bg-dark" id="768-options">
+                    <ul class="nav justify-content-end p-1" id="768-options">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-light" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer class="page-footer font-small bg-dark darken-3 border-top border-secondary" id="footer">
+    <!--End NavBar-->
 
+    <!--Begin Main display-->
+    <div class="container mb-5" id="main-content">
+        <div class="row align-middle">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 align-middle rounded" id="main-card">
+                <!-- <div class="text-center mt-5">
+                    <img class="shadow rounded" id="home-img" src="../IMG_3001.jpg" width="65%" height="95%px">
+                </div> -->
+                <div class="text-center">
+                    <p class="" id="home-name">Steve Garrison</p>
+                    <hr>
+                    <p class="mb-0" id="home-details">Financial Analyst | Developer</p>
+                    <hr>
+                    <img class="mt-4" id="home-pic" src="Home-Pic2.jpg" alt="Steve Garrison Head Shot">
+                    <p class="mt-5" id="home-bio"> Steve Garrison is a Colorado native, where he recently graduated from
+                        the University of Denver's full-stack web-development coding bootcamp in May 2019, and holds a
+                        degree in Finance from Colorado State University where he graduated in December 2018. Steve held
+                        a number of leadership roles during his tenure at CSU, and was a Dean's List student. In June
+                        2019 Steve moved to Salt Lake City to begin his career as a Financial Analyst with Goldman Sachs
+                        on the Finance Divison as a Product Controller on the Investment Management Division.</p>
+                    <p id="home-bio">Steve is passionate about the financial markets, developement and the integration
+                        between the two, and hopes to use his knowledge of the both to increase the accuracy, depth and
+                        efficiency of financial analysis.</p>
+                    <p id="home-bio">In his free time, Steve loves learning new things, skiing, golfing, cooking and
+                        eating, and spending time with friends and family!</p>
+                    <a href="Steven.Garrison Resume.pdf" target="_blank">
+                        <h3 class="text-light bg-primary p-2 mt-5">View Steve's Resume</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark darken-3 border-top border-secondary mt-5" id="footer">
         <!-- Footer Elements -->
         <div class="container">
-
             <!-- Grid row-->
             <div class="row">
             </div>
-            <div class="flex-center pt-3 text-light" id="footer-text">Steve Garrison - 2019</div>
+            <div class="text-center pt-3 text-light" id="footer-text">Steve Garrison - 2019</div>
         </div>
 
     </footer>
     <!-- Footer -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

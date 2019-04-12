@@ -9,43 +9,83 @@
     height: 50px;
 }
 
+li a:hover {
+    background-color:  #0077B5;
+  }
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 5px solid rgba(204, 204, 204, 0.534);
+    margin: 1em 0;
+    padding: 0; 
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), 
+      url("http://cdn.knowledgehi.com/3840x2160/20180518/5afece5fc0249.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h3{
     padding-top: 5px;
     font-size: 27px;
     font-weight: 650;
-
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
-#contact-steve{
-    padding-right: 15px;
-    padding-left: 15px;
+#home-pic{
+    border-radius: 50%;
+    width: 35%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 30px 0 rgba(255, 255, 255, 0.432);
 }
 
-#about-steve{
-    padding-left: 15px;
-    font-size: 32px;
-    font-weight: 450;
+#main-card{
+    margin-top: 7%;
+    margin-bottom: 1%;
+    background: inherit;
 }
 
-#contact-container{
-    margin-top: 10px;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    padding-bottom: 10px;
-    margin-bottom: 100px;
+#home-name{
+    font-size: 62px;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    text-shadow: 3px 3px 5px #000000;
 }
 
-#portfolio-container{
-    padding-bottom: 10px;
-    margin-bottom: 10%;
+#home-details{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 3px 3px 3px #000000;
 }
 
-#steve-bio{
-    font-size: 18px;
+#home-bio{
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px #000000;
 }
 
 #footer{
-    position: fixed;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+#footer-portfolio{
+    position: absolute;
     bottom: 0;
     width: 100%;
     padding-bottom: 1%;
@@ -60,13 +100,18 @@ h3{
     background: #0077B5;
 }
 
-.nav-item{
-    font-weight: 550;
-    font-size: 18px;
-}
 
-.md-form label{
-    position: relative;
-    top: 0%;
-}
+@media screen and (max-width: 768px) {
+    #navbar{
+            position: static;
+    }
+    #768-header{
+        display: flex;
+        justify-content: center;
+    }
 
+    #768-options{
+        display: flex;
+        justify-content: center;
+    }
+}
